@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reproductor de audio y vídeo</title>
+</head>
+<body>
+	<video id="video" src="hablando.mp4" width="400" controls>
+		
+	</video>
+
+	<audio src="Sabotage.mp3" id="audio" controls>
+		
+	</audio>
+
+	<button id="play">Reproducir</button>
+	<button id="pause">Pausar</button>
+
+	<input type="range" value="1" min="0" step="0.1" id="volumen">
+
+	<script type="text/javascript">
+		var video = document.getElementById('video'),
+			btnPlay = document.getElementById('play'),
+			btnPause = document.getElementById('pause'),
+			volumen = document.getElementById('volumen');
+
+			btnPlay.addEventListener('click', function() {
+				video.play();
+			});
+
+			btnPause.addEventListener('click',function(){
+				video.pause();
+			});
+
+			volumen.addEventListener('change',function(){
+				video.volume = volumen.value;
+			})
+
+			//Otras propiedades
+	// video.currentTime - regresa el minuto en el que va el vídeo
+	// video.duration - regresa la duración del video
+	//video.ended - regresa si el vídeo ya termino
+	</script>
+</body>
+</html>

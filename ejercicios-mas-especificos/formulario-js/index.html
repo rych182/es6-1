@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Formulario validado con JS</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<div class="contenedor">
+		<form action="" class="formulario" id="formulario" name="formulario">
+			<div class="contenedor-inputs">
+				<input type="text" name="nombre" placeholder="Nombre completo">
+				<input type="text" name="correo" placeholder="Correo">
+				
+				<div class="sexo">
+					<input type="radio" name="sexo" id="hombre" value="hombre">
+					<!--El for sirve para que al dar click en el input o label se seleccion el radio button-->
+					<label class="label-radio hombre" for="hombre">Hombre</label>
+
+					<input type="radio" name="sexo" id="mujer" value="mujer">
+					<label class="label-radio mujer" for="mujer">Mujer</label>
+				</div>
+
+				<div class="terminos">
+					<input type="checkbox" name="terminos" id="terminos">
+					<label for="terminos">Acepto terminos y condiciones</label>
+				</div>
+
+				<ul class="error" id="error">
+				
+				</ul>
+			</div>
+
+			<input type="submit" class="btn" value="Registrate">
+		</form>
+		
+	</div>
+
+	<script type="text/javascript" src="formulario.js"></script>
+</body>
+</html>

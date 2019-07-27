@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num1 = parseInt(prompt("Ingresa el primer número"));
+		var num2 = parseInt(prompt("Ingresa el segundo número"));
+
+		while(num1 <= 0 || num2 <= 0 || isNaN(num1) || isNaN(num2) || typeof num1 === "undefined" || typeof num2 === "undefined"){
+			if (num1 <= 0 || isNaN(num1) || typeof num1 === "undefined") {
+				num1 = parseInt(prompt("Inserta un número mayor a 0"));	
+			}else if(num2 <= 0 || isNaN(num2) || typeof num2 === "undefined"){
+				num2 = parseInt(prompt("Inserta un número mayor a 0"));
+			}
+		}
+
+		function operacion(num1,num2) {
+			document.write("La suma de los números es: " + (num1+num2) + "<br>");
+			document.write("La resta de los números es: " + (num1-num2) + "<br>");
+			document.write("La multiplicacion de los números es: " + (num1*num2) + "<br>");
+			document.write("La división de los números es: " + (num1/num2) + "<br>");
+		}
+		operacion(num1,num2);
+	</script>
+</body>
+</html>

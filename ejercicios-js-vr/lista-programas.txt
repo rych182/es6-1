@@ -1,0 +1,10 @@
+Programas
+
+1)Usando prompt, pedir que ingreses 2 números y que te diga cual es mayor
+1)Lo mismo que el anterior pero que si ingresas letras o números menores que 0 te lo vuelva a pedir
+3)Imprimer los números que están entre ambas variables
+4)Imprime los números impares que están entre ambas variables
+5)Ingresas un número y te imprime con que números su residuo es 0 
+6)Ingresamos un número y que nos diga si es par o impar
+7)Ingresamos un número e imprimimos su tabla de multiplicar
+8)Ingresa 2 numeros y que se sumen,resten, multipliquen y dividan

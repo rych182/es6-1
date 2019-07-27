@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicios</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		var num1 = parseInt(prompt("Inserta un número"));
+		var num2 = parseInt(prompt("Inserta otro número"));
+
+		while(num1 <= 0 || num2 <= 0 || isNaN(num1) || isNaN(num2) || typeof num1 === "undefined" || typeof num2 === "undefined"){
+			if (num1 <= 0 || isNaN(num1) || typeof num1 === "undefined") {
+				num1 = parseInt(prompt("Inserta un número mayor a 0"));	
+			}else if(num2 <= 0 || isNaN(num2) || typeof num2 === "undefined"){
+				num2 = parseInt(prompt("Inserta un número mayor a 0"));
+			}
+		}
+
+		if (num1 == num2) {
+			alert("Ambos números son iguales");
+		}else if(num1 > num2){
+			alert(num1 + "es mayor que " + num2);
+		}else if (num1 < num2){
+			alert(num2 + "es mayor que " + num1);
+		}else{
+			alert("Ingresa números correctos")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+			1-Un prompt que pida 6 números y los meta en un array
+			2-Mostrar todos los elementos del array
+			3-Ordenar el array y mostrarlo
+			4-Invertir el array y mostrarlo
+			5-Mostrar cuantos elementos tienen el array
+			6-Buscar un valor introducido por el usuario y que le diga al usuario si lo encuentra y cual es su posición
+		*/
+		var numeros = [];
+
+		for (var i = 0; i <= 5; i++) {
+			numeros.push(parseInt(prompt("Introduce un número",10008000)));
+		}
+		numeros.sort();
+		numeros.forEach((numero, index) =>{
+			document.write(numero + "<br>");
+		});
+		document.write("<hr>");
+		numeros.reverse();
+		numeros.forEach((numero,index)=>{
+			document.write(numero + "<br>");
+		});
+		document.write("<hr>");
+		document.write("Hay " + numeros.length + " números en el array");
+		document.write("<hr>");
+
+		var busqueda = parseInt(prompt("Busca un número",0));
+		var posicion = numeros.findIndex(numero => numero == busqueda);
+
+		if (posicion && posicion != -1) {
+			document.write("<h1>ENCONTRADO</H1>");
+			document.write("<h1>posicion de la busqueda:" + posicion + "</h1>");
+		}else{
+			document.write("<h1>NO ENCONTRADO</h1>");
+		}
+		
+
+	</script>
+</body>
+</html>
